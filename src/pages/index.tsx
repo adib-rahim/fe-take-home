@@ -1,9 +1,11 @@
 import { Flex, useColorMode } from "@chakra-ui/react";
-
+import { Button, ButtonGroup } from '@chakra-ui/react'
 import { Container } from "../components/Container";
 import { DarkModeSwitch } from "../components/DarkModeSwitch";
 import HypeLogo from "../components/HypeLogo";
 import { HyperspaceClient } from "hyperspace-client-js";
+import { Title } from "../components/Title";
+import { Collection } from "../components/Collection";
 
 const Index = () => {
   const { colorMode } = useColorMode();
@@ -25,7 +27,9 @@ const Index = () => {
       {/* Using our Hyperspace data, build out something cool for us to review together! */}
 
       <DarkModeSwitch />
-    </Container>
+      <Title />
+      <Collection />
+      </Container>
   );
 };
 

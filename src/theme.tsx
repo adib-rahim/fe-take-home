@@ -14,7 +14,7 @@ const theme = extendTheme({
       siteBackground: {
         default:
           "linear-gradient(180deg, rgba(152, 164, 230, 0.2) 0%, rgba(217, 217, 255, 0) 31.09%),linear-gradient(0deg, #F8F8FC, #F8F8FC)",
-        _dark: "linear-gradient(180deg, #141624 0%, #090A10 1%)",
+        _dark: "linear-gradient(180deg, #141624 0%, #090A10 2%)",
       },
     },
     radii: {
@@ -45,6 +45,7 @@ const theme = extendTheme({
         color: "inherit",
         textDecoration: "none",
       },
+     
     },
   },
 });
