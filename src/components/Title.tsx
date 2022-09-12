@@ -1,7 +1,26 @@
-import { Box, Heading, VStack, Text, HStack } from "@chakra-ui/react";
+import { Box, Heading, VStack, Text, HStack,keyframes } from "@chakra-ui/react";
 import { Button, ButtonGroup } from '@chakra-ui/react';
 import { Highlight } from '@chakra-ui/react'
 import { Wrap, WrapItem } from '@chakra-ui/react'
+import { motion } from 'framer-motion'
+import { Container } from '@chakra-ui/react'
+
+
+const gradient = keyframes`
+
+0% {
+  background-position: 0 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0 50%;
+}
+`;
+
+const animation = ` ${gradient} 5s ease-in-out infinite`;
+
 
 
 export function Title()
@@ -15,18 +34,28 @@ export function Title()
         maxW={{base:'lg', md:'xl', lg:'2xl'}}
         > 
         The Ultimate NFT {' '}
-        <Box className='anime' as='span' bgGradient='linear-gradient(145deg, #00FFA3, #03E1FF,#DC1FFF,)'bgClip = "text" > 
-        Experience
-        
-        </Box>
-        </Heading>
 
-    <Text fontSize= '2xl'>Your one stop shop for everything  {' '}
+<Text as ={motion.h1}
+animation={animation}
+  bgSize= '300%'
+  bgGradient='linear-gradient(to right,#00FFA3, #03E1FF,#DC1FFF,);'
+  bgClip='text'
+  fontSize='6xl'
+  fontWeight='extrabold'
+
+>
+Experience
+</Text>
+        
+</Heading>
+
+<Text fontSize= '2xl'>Your one stop shop for everything  {' '}
     <Highlight
       query='NFTs'
       styles={{ px: '2', py: '1', rounded: 'full', bg: ' #03E1FF' }}>
       NFTs
-    </Highlight>. 
+    </Highlight>
+
 
         </Text>
         {/* <HStack spacing ="8">
@@ -44,10 +73,13 @@ export function Title()
        
 
         </HStack> */}
+       
 
 
     </VStack>
     </Box>
+
+    
 
 
 
