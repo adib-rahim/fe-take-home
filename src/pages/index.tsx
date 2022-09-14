@@ -1,11 +1,13 @@
 import { Flex, useColorMode } from "@chakra-ui/react";
-import { Button, ButtonGroup } from '@chakra-ui/react'
+import { Button, ButtonGroup } from "@chakra-ui/react";
 import { Container } from "../components/Container";
 import { DarkModeSwitch } from "../components/DarkModeSwitch";
 import HypeLogo from "../components/HypeLogo";
 import { HyperspaceClient } from "hyperspace-client-js";
 import { Title } from "../components/Title";
-import { Collection } from "../components/Collection";
+import axios from "axios";
+import { useEffect } from "react";
+import { HyperGrid } from "../components/Grid";
 
 const Index = () => {
   const { colorMode } = useColorMode();
@@ -28,7 +30,7 @@ const Index = () => {
 
       <DarkModeSwitch />
       <Title />
-      <Collection />
+      <HyperGrid />
       </Container>
   );
 };
