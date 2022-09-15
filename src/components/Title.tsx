@@ -51,12 +51,16 @@ export function Title()
         
   </Heading>
 
-  <Text fontSize= '2xl'>Your one stop shop for everything  {' '}
+  <Text fontSize= '2xl'>Your one stop shop for everything  {' '} 
     <Highlight
       query='NFTs'
       styles={{ px: '2', py: '1', rounded: 'full', bg: ' #03E1FF' }}>
       NFTs
+      
     </Highlight>
+
+   
+ 
 
 
   </Text>

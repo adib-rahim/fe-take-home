@@ -105,10 +105,10 @@ export const HyperGrid = () => {
         <Menu>
           <MenuButton>
             <HStack cursor={"pointer"}>
-              <Text fontWeight={"800"} color="#6a0dad" fontSize={"28px"}>
+              <Text fontWeight={"800"} bgGradient="linear-gradient(145deg,#DC1FFF,#03E1FF,#00FFA3 )" bgClip='text' fontSize={"28px"}>
                 {title}
               </Text>
-              <ChevronDownIcon w={7} h={7} color="#6a0dad" mt={2} />
+              <ChevronDownIcon w={7} h={7} color="#03E1FF"  mt={2} />
             </HStack>
           </MenuButton>
           <MenuList bg="#fff" _dark={{bg:'#000'}} >
@@ -180,7 +180,7 @@ export const HyperGrid = () => {
           
         >
           {projectData.length > 0 &&
-            projectData.slice(0, 12).map((project: any, ind) => {
+            projectData.slice(0, 32).map((project: any, ind) => {
               return (
                 <GridItem
                   key={ind}
