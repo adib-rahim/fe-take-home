@@ -65,3 +65,6 @@ Here are some ideas of what you can build if you want somewhere to start. Again 
 3. Sit back and relax. We will review your submition and will follow up with you to set up a time for us to go through your solution together!
 
 If you have any questions during your take home or are blocked from making progress for any reason please reach out to `adriano@hyperspace.xyz`.
+
+Due to a CORS error, please enable cross orgins requests down below before running the server
+https://cors-anywhere.herokuapp.com/"
